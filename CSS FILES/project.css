@@ -1,0 +1,157 @@
+/* CSS UNIVERSAL SELECTOR FOR THE HOME PAGE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* For Testing Purposes */
+body{
+    background-image: linear-gradient(to right, #333399,#FF00CC);
+}
+
+/* header div which will be fixed  */
+.header-div{
+    display: flex;
+    height: 200;
+    background-color: aquamarine;
+    margin-top: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Time Div taking flex 1 */
+/* Time Div taking flex 1 */
+.time-div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 30px;
+    background-color: green;
+}
+#currentTime{
+    font-size: 20px;
+}
+
+/* Navigation Div flex 3 */
+.nav-div{
+    flex: 3;
+    display: flex;
+    background-color: green;
+    justify-content: right;
+    padding-right: 30px;
+    text-align: center;
+}
+/* Remove the Style on the unorders list */
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+/* Display the Navigation bar Horizontally */
+ul li {
+    float: left;
+}
+/* Links Properties */
+ul li a {
+    font-size: 40;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+/* Hover Effects On Vavigation Links */
+ul li a:hover{
+    color: black;
+    border-bottom: 3px solid rgb(5, 28, 237);
+}
+/* Active effect on the navigation links */
+ul li a:active{
+    color: aqua;
+    border-bottom: 3px solid rgba(9, 25, 148, 0.332);
+}
+
+/* Shows That Home is always Active */
+ul li a.project{
+    border-bottom: 3px solid rgb(5, 28, 237);
+}
+/* Main Body Div */
+.main-div{
+    padding-top: 55px;
+}
+.info{
+    display: flex;
+    justify-content: left;
+    margin: 30px;
+    background-color: white;
+}
+
+
+/* Project 1 deatails */
+.project-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+
+
+}
+.project-container{
+    margin-top: 5px;
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    height: 400px;
+    width: 350px;
+    margin-left: 5px;
+
+}
+
+.project-name{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    background-color: green;
+}
+
+.project-pic{
+    margin-top: 10px;
+    border-radius: 0;
+}
+
+.project-btn{
+    margin-top: 15px;
+    margin-left: 3px;
+}
+.project-btn button{
+    width: 320px;
+    background-color: green;
+    color: black;
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    font-size: 30px;
+}
+
+/* footer Div */
+.footer-div{
+    background-color: rgb(43, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 5px;
+    color: white;
+}
+.footer-div p{
+    color: white;
+}
+.flivian{
+    color: #FF00CC;
+}

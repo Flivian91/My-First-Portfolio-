@@ -1,0 +1,66 @@
+<!-- CONTACT PAGE DISPLAYING CONTACT GATEWAY TO SEND MAIL -->
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="flivian mwirigi, portfolio, languages, python">
+    <meta name="descriptions" content="Contact Page Flivian portfolio">
+    <meta http-equiv ="refresh" content="30">
+    <link rel="stylesheet", href="/PORTFOLIO WEB/CSS FILES/contact.css">
+    <title>Home Page</title>
+</head>
+<body>
+ 
+    <!-- Header Div to display all the links and Time -->
+    <!-- The Header Sholid Be Fixed -->
+    <div class="header-div">
+        <!-- Div displays The Current  Time -->
+        <div class="time-div">
+            <h3 id="currentTime"></h3>
+        </div>
+        <!-- Navigation Links  -->
+        <div class="nav-div">
+            <!-- Unordered List showing all the links -->
+            <ul>
+                <li><a title="Home" href="/PORTFOLIO WEB/HTML FILES/home.html">Home</a></li>
+                <li><a title="About" href="/PORTFOLIO WEB/HTML FILES/about.html">About</a></li>
+                <li><a title="Blog" href="/PORTFOLIO WEB/HTML FILES/blog.html">Blog</a></li>
+                <li><a title="Projects" href="/PORTFOLIO WEB/HTML FILES/project.html">Projects</a></li>
+                <li><a class="contact"  title="Contact" href="/PORTFOLIO WEB/HTML FILES/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Main Body to contain all the Element on the page -->
+    <div class="main-div">
+        <div>
+            <!-- Div displays Contact Me Image -->
+            <!-- <div>
+                <a>
+                    <img src="/RENTAL MANAGEMENT SYSTEM/images/contact us.jpeg", alt="Contact Me Image", width=200, height="100">
+                </a>
+            </div> -->
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+        
+                    <button type="submit">Submit</button>
+                </form>
+                </div>
+        </div>
+    </div>
+    <div class="footer-div">
+        <p>@ 2023 </p>&nbsp; Powered By &nbsp;
+            <a class="flivian" href="/PORTFOLIO WEB/HTML FILES/about.html">Devflivian</a>
+        </p>
+    </div>
+    <script src="/PORTFOLIO WEB/JS FILES/contact.js"></script>
+
+</body>

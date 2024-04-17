@@ -1,0 +1,157 @@
+/* CSS UNIVERSAL SELECTOR FOR THE HOME PAGE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* For Testing Purposes */
+body{
+    background-image: linear-gradient(to right, #333399,#FF00CC);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header div which will be fixed  */
+.header-div{
+    display: flex;
+    height: 200;
+    background-color: aquamarine;
+    margin-top: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Time Div taking flex 1 */
+/* Time Div taking flex 1 */
+.time-div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 30px;
+    background-color: green;
+}
+#currentTime{
+    font-size: 20px;
+}
+
+/* Navigation Div flex 3 */
+.nav-div{
+    flex: 3;
+    display: flex;
+    background-color: green;
+    justify-content: right;
+    padding-right: 30px;
+    text-align: center;
+}
+/* Remove the Style on the unorders list */
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+/* Display the Navigation bar Horizontally */
+ul li {
+    float: left;
+}
+/* Links Properties */
+ul li a {
+    font-size: 40;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+/* Hover Effects On Vavigation Links */
+ul li a:hover{
+    color: black;
+    border-bottom: 3px solid rgb(5, 28, 237);
+}
+/* Active effect on the navigation links */
+ul li a:active{
+    color: aqua;
+    border-bottom: 3px solid rgba(9, 25, 148, 0.332);
+}
+
+/* Shows That Home is always Active */
+ul li a.project{
+    border-bottom: 3px solid rgb(5, 28, 237);
+}
+/* Main Body Div */
+.main-div{
+    padding-top: 55px;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 5px auto;
+    margin-top: 5px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* footer Div */
+.footer-div{
+    background-color: rgb(43, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 5px;
+    color: white;
+}
+.footer-div p{
+    color: white;
+}
+.flivian{
+    color: #FF00CC;
+}
